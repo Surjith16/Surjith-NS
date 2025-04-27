@@ -1,0 +1,310 @@
+<!DO+CTYPE html>
+< lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" c+ontent="wi
+    dth=device-width, inaitial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="bg-gray-100 h-screen">
+        <nav class="">
+            <ul class="flex justify-around bg-gray-900 font-medium text-[#21a9c2] fixed top-0 w-full ">
+                <li class="py-4  hover:border-b-3 ">Home</li>
+                <li class="py-4 hover:border-b-3">About</li>
+                <li class="py-4 hover:border-b-3">Education</li>
+                <li class="py-4 hover:border-b-3"><a href="#Skill">Skills</a></li>
+                <li class="py-4 hover:border-b-3">Project</li>
+            </ul>
+        </nav>
+        <section class="bg-gradient-to-t from-black to-gray-700 h-screen overflow-y-scroll  [&::-webkit-scrollbar]:hidden  [-ms-overflow-style:none] [scrollbar-width:none]">
+            <div class="w-full flex">
+           
+            <span class=" w-[50%] text-center  my-auto"> 
+             <h1 class="inline-block text-7xl text-white border-b-2 border-t-2 "><span class="[text-shadow:0_0_10px_#21a9c2,0_0_20px_#21a9c2]   ">SURJITH</span> N S</h1>
+             <h6 class="text-xl text-white">Software <span class="text-[#21a9c2]">developer</span>
+             </h6>
+             <ul class="flex justify-center gap-5 text-white mt-10">
+                <li><a href=""> <i class="fa-brands fa-instagram text-2xl border-3 border-[#21a9c2] p-2 rounded-full hover:shadow-[0_0_15px_5px_#21a9c2]"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-facebook text-2xl  border-3 border-[#21a9c2] p-2 rounded-full hover:shadow-[0_0_15px_5px_#21a9c2]"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-envelope text-2xl border-3 border-[#21a9c2] p-2 rounded-full hover:shadow-[0_0_15px_5px_#21a9c2]"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-mobile text-2xl border-3 border-[#21a9c2] p-2 rounded-full hover:shadow-[0_0_15px_5px_#21a9c2]"></i></a></li>
+            </ul>
+             </span>
+                <span class="h-screen w-[50%] flex flex-col justify-evenly">
+                    <img src="https://cdni.iconscout.com/illustration/premium/thumb/full-stack-developer-1946887-1651585.png" alt="">
+                   
+                </span>
+               
+            </div>
+            <!-- about page -->
+            <div class="h-screen">
+                <section class="bg-gray-900 h-[80%] w-[90%] m-auto rounded-3xl shadow-[0_0_15px_5px_rgba(0,255,255,0.6)]">
+                    <h1 class="text-center text-5xl [text-shadow:0_0_10px_#21a9c2,0_0_20px_#21a9c2]  text-white pt-5">Aboutme</h1>
+                    <div class="flex">
+                        <div class=" p-20">
+                            <img class="h-90" src="https://cdn.esquimaltmfrc.com/wp-content/uploads/2015/09/flat-faces-icons-circle-man-6-940x940.png" alt="">
+                        </div>
+                        <div class="w-[50%] text-white text-xl mt-20">
+                            <h2>About Me</h2>
+                            <p>Hello! I am Surjith N.S., a passionate Full Stack Developer with a strong interest in building impactful web applications. With a solid foundation in Java, SQL, and web technologies, I strive to create efficient and scalable solutions. My journey in the tech world has been driven by a curiosity to learn and a dedication to continuous improvement.</p>
+                            <p>I have hands-on experience with various backend technologies, and I am always eager to expand my skill set. Whether it's solving complex problems or learning new frameworks, I am always up for the challenge. Let's build something amazing together!</p>
+
+                            <div class="mt-10">
+                                <a href="" class="border border-[#21a9c2] p-2 bg-[#21a9c2] rounded-xl">Resume</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- education section -->
+            <div class="h-screen ">
+                <div class="w-[90%] mx-auto bg-gray-900 h-[80%] w-[90%] m-auto rounded-3xl shadow-[0_0_15px_5px_rgba(0,255,255,0.6)]    ">
+                    <h1 class="text-center text-5xl [text-shadow:0_0_10px_#21a9c2,0_0_20px_#21a9c2]  text-white pt-5">Education</h1>
+                    <div class="space-x-2 text-center my-10 text-white text-bold">
+                        <button onclick="showBlock('block1')" class=" border border-[#21a9c2] p-2 bg-[#21a9c2] rounded-xl">Degree</button>
+                        <button onclick="showBlock('block2')" class=" border border-[#21a9c2] p-2 bg-[#21a9c2] rounded-xl">Hr.Sec</button>
+                        <button onclick="showBlock('block3')" class=" border border-[#21a9c2] p-2 bg-[#21a9c2] rounded-xl">SSLC</button>
+                      </div>
+                    
+                      <!-- Block 1 is visible by default (no hidden class) -->
+                      <div class="w-full text-[#21a9c2]">
+                        <div id="block1" class="content-block p-4 shadow bg-gray-800 w-[60%] mx-auto  h-[60%] rounded-xl">
+                            <div class="text-center w-full pl-[25%] pt-8">
+                                <table class="text-white" >
+                                    <tr class="tablerow">
+                                        <th>Name of school</th>
+                                        <td>Vins Christian Colledge Of Engineering</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Stream</th>
+                                        <td>BE Computer Science</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Percentage</th>
+                                        <td>81.0%</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Passed Year</th>
+                                        <td>2023</td>
+                                    </tr>
+                                </table>
+                            </div>
+                          </div>
+                        
+                          <div id="block2" class="content-block hidden p-4  shadow bg-gray-800 w-[60%] mx-auto  h-[60%] rounded-xl ">
+                            <div class="text-center w-full pl-[25%] pt-8">
+                                <table class="text-white" >
+                                    <tr class="tablerow">
+                                        <th>Name of school</th>
+                                        <td>Infant Jesus Matric Hr.Sec School </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Stream</th>
+                                        <td>Maths-Biology</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Percentage</th>
+                                        <td>55.3%</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Passed Year</th>
+                                        <td>2023</td>
+                                    </tr>
+                                </table>
+                            </div>
+                          </div>
+                        
+                          <div id="block3" class="content-block hidden p-4 shadow bg-gray-800 w-[60%] mx-auto  h-[60%] rounded-xl">
+                            <div class="text-center w-full pl-[25%] pt-8">
+                                <table class="text-White" >
+                                    <tr class="tablerow">
+                                        <th>Name of school</th>
+                                        <td>St Johns Matriculation School</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Stream</th>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Percentage</th>
+                                        <td>84.0%</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Passed Year</th>
+                                        <td>2023</td>
+                                    </tr>
+                                </table>
+                            </div>
+                          </div>
+                      </div>
+                    
+                </div>
+
+       
+            </div>
+
+           
+       <!-- Skill section -->
+<div class="h-screen">
+    <div class="w-[90%] mx-auto bg-gray-900 h-[80%] rounded-3xl shadow-[0_0_15px_5px_rgba(0,255,255,0.6)]">
+      
+      <!-- Heading -->
+      <h1 class="text-center text-5xl text-white [text-shadow:0_0_10px_#21a9c2,0_0_20px_#21a9c2] pt-5" id="Skill">SKILLS</h1>
+      
+      <!-- Cards Container -->
+      <div class="mt-8 flex flex-wrap justify-center gap-8 p-10">
+  
+        <!-- HTML -->
+        <div class="bg-gray-800 p-6 rounded-xl text-center w-[22%] min-w-[200px] hover:scale-105 transition hover:shadow-[0_0_15px_5px_#21a9c2]">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" class="w-16 h-16 mx-auto mb-4">
+          <h2 class="text-white text-2xl mb-2">HTML</h2>
+        </div>
+  
+        <!-- CSS -->
+        <div class="bg-gray-800 p-6 rounded-xl text-center w-[22%] min-w-[200px] hover:scale-105 transition hover:shadow-[0_0_15px_5px_#21a9c2]">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" class="w-16 h-16 mx-auto mb-4">
+          <h2 class="text-white text-2xl mb-2">CSS</h2>
+        </div>
+  
+        <!-- JavaScript -->
+        <div class="bg-gray-800 p-6 rounded-xl text-center w-[22%] min-w-[200px] hover:scale-105 transition hover:shadow-[0_0_15px_5px_#21a9c2]">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="w-16 h-16 mx-auto mb-4">
+          <h2 class="text-white text-2xl mb-2">JavaScript</h2>
+        </div>
+  
+        <!-- Java -->
+        <div class="bg-gray-800 p-6 rounded-xl text-center w-[22%] min-w-[200px] hover:scale-105 transition hover:shadow-[0_0_15px_5px_#21a9c2]">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="w-16 h-16 mx-auto mb-4">
+          <h2 class="text-white text-2xl mb-2">Java</h2>
+        </div>
+  
+        <!-- SQL -->
+        <div class="bg-gray-800 p-6 rounded-xl text-center w-[22%] min-w-[200px] hover:scale-105 transition hover:shadow-[0_0_15px_5px_#21a9c2]">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" class="w-16 h-16 mx-auto mb-4">
+          <h2 class="text-white text-2xl mb-2">SQL</h2>
+        </div>
+  
+        <div class="bg-gray-800 p-6 rounded-xl text-center w-[22%] min-w-[200px] hover:scale-105 transition hover:shadow-[0_0_15px_5px_#21a9c2]">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="w-16 h-16 mx-auto mb-4 animate-spin-slow">
+            <h2 class="text-white text-2xl mb-2">React</h2>
+          </div>
+  
+        <!-- Spring Boot -->
+        <div class="bg-gray-800 p-6 rounded-xl text-center w-[22%] min-w-[200px] hover:scale-105 transition hover:shadow-[0_0_15px_5px_#21a9c2]">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot" class="w-16 h-16 mx-auto mb-4">
+          <h2 class="text-white text-2xl mb-2">Spring Boot</h2>
+        </div>
+  
+        <!-- Spring -->
+        <div class="bg-gray-800 p-6 rounded-xl text-center w-[22%] min-w-[200px] hover:scale-105 transition hover:shadow-[0_0_15px_5px_#21a9c2]">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring" class="w-16 h-16 mx-auto mb-4">
+          <h2 class="text-white text-2xl mb-2">Spring</h2>
+        </div>
+  
+      </div>
+      
+    </div>
+  </div>
+  
+  <div class="h-screen">
+    <div class="w-[90%] mx-auto bg-gray-900 h-[80%] rounded-3xl shadow-[0_0_15px_5px_rgba(0,255,255,0.6)]">
+  
+      <!-- Heading -->
+      <h1 class="text-center text-5xl text-white [text-shadow:0_0_10px_#21a9c2,0_0_20px_#21a9c2] pt-5" id="Project">Projects</h1>
+  
+      <!-- Project Content -->
+      <div class="py-8 relative">
+  
+        <!-- Project Cards Container -->
+        <div class="project-cards-container w-full flex overflow-hidden my-auto">
+  
+          <!-- Project 1: Search Engine Cloning -->
+          <div class="bg-gray-800 p-20 rounded-xl w-[90%] project-card opacity-0 m-auto">
+            <h3 class="text-3xl text-white mb-4">Search Engine Cloning</h3>
+            <p class="text-white mb-4">The Search Engine Cloning project involved creating a search engine similar to popular platforms, with a chatbot extension using ReactJS. The chatbot uses sentiment analysis to personalize responses, enhancing user engagement. It also features an intelligent query suggestion system. The project aimed at improving the search experience by integrating conversational AI. This extension resulted in a 25% increase in user retention.</p>
+            <div class="flex justify-between">
+              <a href="#" class="text-blue-400 hover:underline">View Demo</a>
+              <a href="#" class="text-blue-400 hover:underline">GitHub</a>
+            </div>
+          </div>
+  
+          <!-- Project 2: Movie Library Web App -->
+          <div class="bg-gray-800 p-20 rounded-xl w-[90%] project-card opacity-0 mx-auto">
+            <h3 class="text-3xl text-white mb-4">Movie Library Web App</h3>
+            <p class="text-white mb-4">The Movie Library Web App allows users to browse, purchase, and stream movies with ease. Built using J2EE, it offers secure user authentication and a vast catalog of films. Users can stream or download purchased movies in HD and manage their personal watchlist. The platform also features an admin panel to manage movie data and track user activity. Fully responsive, the app works seamlessly across devices, providing an engaging experience.</p>
+            <div class="flex justify-between">
+              <a href="#" class="text-blue-400 hover:underline">View Demo</a>
+              <a href="#" class="text-blue-400 hover:underline">GitHub</a>
+            </div>
+          </div>
+  
+          <!-- Project 3: Real-Time River Water Quality Monitoring -->
+          <div class="bg-gray-800 p-20 rounded-xl w-[90%] project-card opacity-0 mx-auto">
+            <h3 class="text-3xl text-white mb-4">Real-Time River Water Quality Monitoring</h3>
+            <p class="text-white mb-4">The Real-Time River Water Quality Monitoring project utilizes IoT sensors to monitor river water quality 24/7. The system automatically detects issues in water quality and provides real-time data for immediate action. It aims to improve environmental standards by quickly identifying pollution events. The system was able to correct 15% more water quality issues within 30 minutes. This solution ensures compliance with environmental standards and boosts river ecosystem protection.</p>
+            <div class="flex justify-between">
+              <a href="#" class="text-blue-400 hover:underline">View Demo</a>
+              <a href="#" class="text-blue-400 hover:underline">GitHub</a>
+            </div>
+          </div>
+  
+        </div>
+  
+        <!-- Next Button -->
+       <div class="w-[90%] text-end mt-5">
+        <button id="nextButton" class=" bg-blue-500 text-white p-3 rounded-full hover:bg-blue-400 transition">
+            Next
+          </button>
+       </div>
+  
+      </div>
+    </div>
+  </div>
+  
+
+
+       </div>
+
+        </section>
+    </div>
+    <script>
+      let currentIndex = 0;
+  const cards = document.querySelectorAll('.project-card');
+  const nextButton = document.getElementById('nextButton');
+  const totalCards = cards.length;
+
+  // Function to show the next card
+  const showNextCard = () => {
+    // Hide the current card
+    cards[currentIndex].classList.remove('active');
+    // Move to the next card index
+    currentIndex = (currentIndex + 1) % totalCards; // Loop back to the first card
+    // Show the next card
+    cards[currentIndex].classList.add('active');
+  };
+
+  // Auto-slide every 4 seconds
+  setInterval(showNextCard, 40000);
+
+  // Next button functionality
+  nextButton.addEventListener('click', showNextCard);
+
+  // Initially show the first card
+  cards[currentIndex].classList.add('active');
+
+window.addEventListener('scroll', slideInOnScroll);
+slideInOnScroll();
+        function showBlock(blockId) {
+          const blocks = document.querySelectorAll(".content-block");
+          blocks.forEach(block => block.classList.add("hidden"));
+          
+          document.getElementById(blockId).classList.remove("hidden");
+        }
+      </script>
+    <script src="https://kit.fontawesome.com/f3f6300083.js" crossorigin="anonymous"></script>
+</body>
