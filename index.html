@@ -1,9 +1,9 @@
-<!DO+CTYPE html>
-< lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" c+ontent="wi
-    dth=device-width, inaitial-scale=1.0">
+    dth=device-width, initial-scale=1.0">
     <title>Document</title>
 
     <link rel="stylesheet" href="style.css">
@@ -11,15 +11,36 @@
 </head>
 <body>
     <div class="bg-gray-100 h-screen">
-        <nav class="">
-            <ul class="flex justify-around bg-gray-900 font-medium text-[#21a9c2] fixed top-0 w-full ">
-                <li class="py-4  hover:border-b-3 ">Home</li>
-                <li class="py-4 hover:border-b-3">About</li>
-                <li class="py-4 hover:border-b-3">Education</li>
-                <li class="py-4 hover:border-b-3"><a href="#Skill">Skills</a></li>
-                <li class="py-4 hover:border-b-3">Project</li>
-            </ul>
-        </nav>
+      
+      <nav class="bg-gray-900 fixed top-0 w-full z-50">
+        <!-- Mobile Toggle -->
+        <div class="flex items-center justify-between p-4 lg:hidden">
+          <h1 class="text-[#21a9c2] text-xl font-bold">MySite</h1>
+          
+          <button id="toggleMenu" class="text-white text-2xl focus:outline-none">☰</button>
+        </div>
+    
+        <!-- Nav Links -->
+        <ul class="hidden lg:flex flex-col lg:flex-row lg:justify-around text-[#21a9c2] font-medium">
+          <li class="py-4 text-center hover:border-b-2">Home</li>
+          <li class="py-4 text-center hover:border-b-2">About</li>
+          <li class="py-4 text-center hover:border-b-2">Education</li>
+          <li class="py-4 text-center hover:border-b-2"><a href="#Skill">Skills</a></li>
+          <li class="py-4 text-center hover:border-b-2">Project</li>
+        </ul>
+        
+        <ul id="navLinks" class=" hidden text-[#21a9c2] font-medium text-3xl lg:hidden ">
+          <li class="py-4 text-center hover:border-b-2">Home</li>
+          <li class="py-4 text-center hover:border-b-2">About</li>
+          <li class="py-4 text-center hover:border-b-2">Education</li>
+          <li class="py-4 text-center hover:border-b-2"><a href="#Skill">Skills</a></li>
+          <li class="py-4 text-center hover:border-b-2">Project</li>
+        </ul>
+        
+      
+
+      </nav>
+     
         <section class="bg-gradient-to-t from-black to-gray-700 h-screen overflow-y-scroll  [&::-webkit-scrollbar]:hidden  [-ms-overflow-style:none] [scrollbar-width:none]">
             <div class="w-full flex">
            
@@ -42,115 +63,81 @@
             </div>
             <!-- about page -->
             <div class="h-screen">
-                <section class="bg-gray-900 h-[80%] w-[90%] m-auto rounded-3xl shadow-[0_0_15px_5px_rgba(0,255,255,0.6)]">
-                    <h1 class="text-center text-5xl [text-shadow:0_0_10px_#21a9c2,0_0_20px_#21a9c2]  text-white pt-5">Aboutme</h1>
-                    <div class="flex">
-                        <div class=" p-20">
-                            <img class="h-90" src="https://cdn.esquimaltmfrc.com/wp-content/uploads/2015/09/flat-faces-icons-circle-man-6-940x940.png" alt="">
-                        </div>
-                        <div class="w-[50%] text-white text-xl mt-20">
-                            <h2>About Me</h2>
-                            <p>Hello! I am Surjith N.S., a passionate Full Stack Developer with a strong interest in building impactful web applications. With a solid foundation in Java, SQL, and web technologies, I strive to create efficient and scalable solutions. My journey in the tech world has been driven by a curiosity to learn and a dedication to continuous improvement.</p>
-                            <p>I have hands-on experience with various backend technologies, and I am always eager to expand my skill set. Whether it's solving complex problems or learning new frameworks, I am always up for the challenge. Let's build something amazing together!</p>
-
-                            <div class="mt-10">
-                                <a href="" class="border border-[#21a9c2] p-2 bg-[#21a9c2] rounded-xl">Resume</a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
+              <section class="lg:bg-gray-900 h-[80%] w-[90%] m-auto rounded-3xl shadow-[0_0_15px_5px_rgba(0,255,255,0.6)]">
+                  <h1 class="py-20 text-7xl text-center lg:p-0 lg:text-center text-5xl [text-shadow:0_0_10px_#21a9c2,0_0_20px_#21a9c2] text-white pt-5">About Me</h1>
+                  <div class="lg:flex">
+                      <!-- Image Section -->
+                      <div class=" w-full lg:w-[50%] p-5 lg:p-20">
+                          <img class="py-20 mx-auto h-[70%] w-[70%] lg:h-[85%] lg:w-[80%] rounded-full lg:p-0" src="https://cdn.esquimaltmfrc.com/wp-content/uploads/2015/09/flat-faces-icons-circle-man-6-940x940.png" alt="Surjith N.S.">
+                      </div>
+                      <!-- Content Section -->
+                      <div class=" text-4xl p-10 lg:text-xl lg:w-[50%] text-white mt-10 lg:mt-20 lg:pr-5 lg:p-0">
+                          <p>Hello! I am Surjith N.S., a passionate Full Stack Developer with a strong interest in building impactful web applications. With a solid foundation in Java, SQL, and web technologies, I strive to create efficient and scalable solutions. My journey in the tech world has been driven by a curiosity to learn and a dedication to continuous improvement.</p>
+                          <p class="mt-4">I have hands-on experience with various backend technologies, and I am always eager to expand my skill set. Whether it's solving complex problems or learning new frameworks, I am always up for the challenge. Let's build something amazing together!</p>
+          
+                          <div class="mt-10">
+                              <a href="" class="border border-[#21a9c2] p-2 bg-[#21a9c2] rounded-xl text-white">Resume</a>
+                          </div>
+                      </div>
+                  </div>
+              </section>
+          </div>
+          
 
             <!-- education section -->
-            <div class="h-screen ">
-                <div class="w-[90%] mx-auto bg-gray-900 h-[80%] w-[90%] m-auto rounded-3xl shadow-[0_0_15px_5px_rgba(0,255,255,0.6)]    ">
-                    <h1 class="text-center text-5xl [text-shadow:0_0_10px_#21a9c2,0_0_20px_#21a9c2]  text-white pt-5">Education</h1>
-                    <div class="space-x-2 text-center my-10 text-white text-bold">
-                        <button onclick="showBlock('block1')" class=" border border-[#21a9c2] p-2 bg-[#21a9c2] rounded-xl">Degree</button>
-                        <button onclick="showBlock('block2')" class=" border border-[#21a9c2] p-2 bg-[#21a9c2] rounded-xl">Hr.Sec</button>
-                        <button onclick="showBlock('block3')" class=" border border-[#21a9c2] p-2 bg-[#21a9c2] rounded-xl">SSLC</button>
-                      </div>
-                    
-                      <!-- Block 1 is visible by default (no hidden class) -->
-                      <div class="w-full text-[#21a9c2]">
-                        <div id="block1" class="content-block p-4 shadow bg-gray-800 w-[60%] mx-auto  h-[60%] rounded-xl">
-                            <div class="text-center w-full pl-[25%] pt-8">
-                                <table class="text-white" >
-                                    <tr class="tablerow">
-                                        <th>Name of school</th>
-                                        <td>Vins Christian Colledge Of Engineering</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Stream</th>
-                                        <td>BE Computer Science</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Percentage</th>
-                                        <td>81.0%</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Passed Year</th>
-                                        <td>2023</td>
-                                    </tr>
-                                </table>
-                            </div>
-                          </div>
-                        
-                          <div id="block2" class="content-block hidden p-4  shadow bg-gray-800 w-[60%] mx-auto  h-[60%] rounded-xl ">
-                            <div class="text-center w-full pl-[25%] pt-8">
-                                <table class="text-white" >
-                                    <tr class="tablerow">
-                                        <th>Name of school</th>
-                                        <td>Infant Jesus Matric Hr.Sec School </td>
-                                    </tr>
-                                    <tr>
-                                        <th>Stream</th>
-                                        <td>Maths-Biology</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Percentage</th>
-                                        <td>55.3%</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Passed Year</th>
-                                        <td>2023</td>
-                                    </tr>
-                                </table>
-                            </div>
-                          </div>
-                        
-                          <div id="block3" class="content-block hidden p-4 shadow bg-gray-800 w-[60%] mx-auto  h-[60%] rounded-xl">
-                            <div class="text-center w-full pl-[25%] pt-8">
-                                <table class="text-White" >
-                                    <tr class="tablerow">
-                                        <th>Name of school</th>
-                                        <td>St Johns Matriculation School</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Stream</th>
-                                        <td>-</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Percentage</th>
-                                        <td>84.0%</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Passed Year</th>
-                                        <td>2023</td>
-                                    </tr>
-                                </table>
-                            </div>
-                          </div>
-                      </div>
-                    
+            <div class="h-max py-20 lg:p-0 lg:h-screen lg:px-4 ">
+              <div class="w-[90%] lg:w-[90%] mx-auto bg-gray-900 h-auto lg:h-[80%] rounded-3xl shadow-[0_0_15px_5px_rgba(0,255,255,0.6)]">
+                <h1 class="text-center text-4xl lg:text-5xl text-white pt-5 [text-shadow:0_0_10px_#21a9c2,0_0_20px_#21a9c2]">Education</h1>
+            
+                <div class="flex flex-wrap justify-center gap-2 text-white font-bold my-10">
+                  <button onclick="showBlock('block1')" class="border border-[#21a9c2] px-4 py-2 bg-[#21a9c2] rounded-xl">Degree</button>
+                  <button onclick="showBlock('block2')" class="border border-[#21a9c2] px-4 py-2 bg-[#21a9c2] rounded-xl">Hr.Sec</button>
+                  <button onclick="showBlock('block3')" class="border border-[#21a9c2] px-4 py-2 bg-[#21a9c2] rounded-xl">SSLC</button>
                 </div>
-
-       
+            
+                <div class="text-[#21a9c2] space-y-6">
+                  <!-- Degree -->
+                  <div id="block1" class="content-block p-4 bg-gray-800 rounded-xl w-full lg:w-[60%] mx-auto">
+                    <div class="pt-4">
+                      <table class="text-white w-full text-left">
+                        <tr><th>Name of school</th><td>Vins Christian College Of Engineering</td></tr>
+                        <tr><th>Stream</th><td>BE Computer Science</td></tr>
+                        <tr><th>Percentage</th><td>81.0%</td></tr>
+                        <tr><th>Passed Year</th><td>2023</td></tr>
+                      </table>
+                    </div>
+                  </div>
+            
+                  <!-- Hr.Sec -->
+                  <div id="block2" class="content-block hidden p-4 bg-gray-800 rounded-xl w-full lg:w-[60%] mx-auto">
+                    <div class="pt-4">
+                      <table class="text-white w-full text-left">
+                        <tr><th>Name of school</th><td>Infant Jesus Matric Hr.Sec School</td></tr>
+                        <tr><th>Stream</th><td>Maths-Biology</td></tr>
+                        <tr><th>Percentage</th><td>55.3%</td></tr>
+                        <tr><th>Passed Year</th><td>2023</td></tr>
+                      </table>
+                    </div>
+                  </div>
+            
+                  <!-- SSLC -->
+                  <div id="block3" class="content-block hidden p-4 bg-gray-800 rounded-xl w-full lg:w-[60%] mx-auto">
+                    <div class="pt-4">
+                      <table class="text-white w-full text-left">
+                        <tr><th>Name of school</th><td>St Johns Matriculation School</td></tr>
+                        <tr><th>Stream</th><td>-</td></tr>
+                        <tr><th>Percentage</th><td>84.0%</td></tr>
+                        <tr><th>Passed Year</th><td>2023</td></tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-
+            
            
        <!-- Skill section -->
-<div class="h-screen">
+<div class="h-max py-20 lg:p-0 lg:h-screen ">
     <div class="w-[90%] mx-auto bg-gray-900 h-[80%] rounded-3xl shadow-[0_0_15px_5px_rgba(0,255,255,0.6)]">
       
       <!-- Heading -->
@@ -210,8 +197,10 @@
       
     </div>
   </div>
+
   
-  <div class="h-screen">
+  
+  <div class="h-max py-20 lg:h-screen lg:p-0">
     <div class="w-[90%] mx-auto bg-gray-900 h-[80%] rounded-3xl shadow-[0_0_15px_5px_rgba(0,255,255,0.6)]">
   
       <!-- Heading -->
@@ -272,39 +261,8 @@
 
         </section>
     </div>
-    <script>
-      let currentIndex = 0;
-  const cards = document.querySelectorAll('.project-card');
-  const nextButton = document.getElementById('nextButton');
-  const totalCards = cards.length;
-
-  // Function to show the next card
-  const showNextCard = () => {
-    // Hide the current card
-    cards[currentIndex].classList.remove('active');
-    // Move to the next card index
-    currentIndex = (currentIndex + 1) % totalCards; // Loop back to the first card
-    // Show the next card
-    cards[currentIndex].classList.add('active');
-  };
-
-  // Auto-slide every 4 seconds
-  setInterval(showNextCard, 40000);
-
-  // Next button functionality
-  nextButton.addEventListener('click', showNextCard);
-
-  // Initially show the first card
-  cards[currentIndex].classList.add('active');
-
-window.addEventListener('scroll', slideInOnScroll);
-slideInOnScroll();
-        function showBlock(blockId) {
-          const blocks = document.querySelectorAll(".content-block");
-          blocks.forEach(block => block.classList.add("hidden"));
-          
-          document.getElementById(blockId).classList.remove("hidden");
-        }
+    <script src="./script.js">
+      
       </script>
     <script src="https://kit.fontawesome.com/f3f6300083.js" crossorigin="anonymous"></script>
 </body>
